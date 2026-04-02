@@ -1,0 +1,116 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 15 90% 30%;
+    --foreground: 0 0% 100%;
+    --card: 15 90% 25%;
+    --card-foreground: 0 0% 100%;
+    --popover: 15 90% 25%;
+    --popover-foreground: 0 0% 100%;
+    --primary: 15 100% 55%;
+    --primary-foreground: 0 0% 0%;
+    --secondary: 15 80% 20%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 15 60% 35%;
+    --muted-foreground: 0 0% 90%;
+    --accent: 30 100% 60%;
+    --accent-foreground: 0 0% 0%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 15 70% 40%;
+    --input: 15 80% 20%;
+    --ring: 15 100% 65%;
+    --radius: 0.75rem;
+    --sidebar-background: 15 90% 25%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 15 100% 55%;
+    --sidebar-primary-foreground: 0 0% 0%;
+    --sidebar-accent: 15 80% 20%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 15 70% 40%;
+    --sidebar-ring: 15 100% 65%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-card/60 backdrop-blur-xl border border-border/50 rounded-xl;
+  }
+  .glow-cyan {
+    box-shadow: 0 0 20px hsl(15 100% 55% / 0.3), 0 0 40px hsl(15 100% 55% / 0.1);
+  }
+  .glow-coral {
+    box-shadow: 0 0 20px hsl(30 100% 60% / 0.3), 0 0 40px hsl(30 100% 60% / 0.1);
+  }
+  .glow-cyan-sm {
+    box-shadow: 0 0 10px hsl(15 100% 55% / 0.2);
+  }
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent;
+  }
+  .btn-glow, .btn-coral {
+    @apply bg-secondary text-secondary-foreground font-semibold rounded-lg transition-colors hover:bg-secondary/80;
+  }
+  .phone-card-hover {
+    @apply transition-all duration-300;
+  }
+  .phone-card-hover:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 30px hsl(15 100% 55% / 0.15);
+  }
+  .pulse-ring {
+    animation: pulseRing 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+  .skeleton-dark {
+    @apply animate-pulse bg-muted rounded;
+  }
+}
+
+@layer utilities {
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@keyframes pulseRing {
+  0%, 100% { box-shadow: 0 0 0 0 hsl(15 100% 55% / 0.4); }
+  50% { box-shadow: 0 0 0 10px hsl(15 100% 55% / 0); }
+}
+
+@keyframes fadeSlideUp {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes checkmark {
+  0% { transform: scale(0); opacity: 0; }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.animate-fade-slide-up {
+  animation: fadeSlideUp 0.3s ease-out forwards;
+}
+
+.animate-checkmark {
+  animation: checkmark 0.6s ease-out forwards;
+}

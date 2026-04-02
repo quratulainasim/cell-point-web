@@ -1,73 +1,59 @@
-# Welcome to your Lovable project
+# Cell Point Web
 
-## Project info
+Cell Point is a premium mobile e-commerce platform that allows users to browse over 450+ phones from top brands. The application features smart filtering, instant search, and a seamless checkout experience.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+## Features
 
-## How can I edit this code?
+- **Extensive Catalog:** Browse a massive catalog of smartphones.
+- **Smart Filtering:** Find devices by categories, brands, price tags, and battery features right from the homepage.
+- **Instant Search:** Powerful live-search capabilities to jump to specific models.
+- **Quick Add & Cart System:** Instant "Quick Add" overlays and a fully integrated cart context system with coupon processing.
+- **Premium UI:** Built with sleek glass-card layouts, dynamic glows, and a stunning dark reddish-orange theme.
 
-There are several ways of editing your application.
+## Technologies Used
 
-**Use Lovable**
+This project is built with a modern frontend stack:
+- **[Vite](https://vitejs.dev/)** - Lightning fast build tool.
+- **[React](https://reactjs.org/)** - UI Library.
+- **[TypeScript](https://www.typescriptlang.org/)** - For type safety and better developer experience.
+- **[Tailwind CSS](https://tailwindcss.com/)** - Utility-first CSS framework for styling.
+- **[shadcn/ui](https://ui.shadcn.com/)** - High-quality accessible components.
+- **[Lucide React](https://lucide.dev/)** - Clean and modern SVG icons.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+## Getting Started
 
-Changes made via Lovable will be committed automatically to this repo.
+### Prerequisites
 
-**Use your preferred IDE**
+Ensure you have [Node.js](https://nodejs.org/) & `npm` installed.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Installation
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+1. **Clone the repository:**
+   ```sh
+   git clone https://github.com/quratulainasim/cell-point-web.git
+   ```
 
-Follow these steps:
+2. **Navigate to the project directory:**
+   ```sh
+   cd cell-point-web
+   ```
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+3. **Install the dependencies:**
+   ```sh
+   npm install
+   ```
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+4. **Start the development server:**
+   ```sh
+   npm run dev
+   ```
 
-# Step 3: Install the necessary dependencies.
-npm i
+The application will now be running locally. Open your browser and navigate to the localhost URL provided in your terminal.
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+## Setup & Configuration
 
-**Edit a file directly in GitHub**
+Review the provided `.env` settings depending on your backend setup contexts or Supabase integrations. Make sure not to commit sensitive parameters to version control.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## License
 
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+© 2026 Cell Point. All rights reserved.
